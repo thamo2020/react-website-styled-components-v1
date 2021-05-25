@@ -1,7 +1,7 @@
 import GlobalStyle from './globalStyles';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import {Navbar, Footer} from './components'; 
+import {Navbar, Footer,Pricing} from './components'; 
 import Home from './pages/HomePage/Home';
 
 
