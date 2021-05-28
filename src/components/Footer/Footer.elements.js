@@ -164,7 +164,7 @@ export const SocialMedia = styled.section `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
+    width: 240px; 
  
  `;
 
@@ -173,5 +173,5 @@ export const SocialMedia = styled.section `
     font-size: 24px;
  `;
 
-
+ 
   
