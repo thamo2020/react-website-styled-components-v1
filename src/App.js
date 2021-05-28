@@ -7,6 +7,7 @@ import SignUp from './pages/SignUp/SignUp';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import {Navbar, Footer} from './components'; 
+import ScrollToTop from './components/ScrollToTop';
 
 
 
@@ -16,6 +17,7 @@ function App() {
     <Router>
 
         <GlobalStyle/>
+        <ScrollToTop />
         <Navbar />
 
         <Switch>
