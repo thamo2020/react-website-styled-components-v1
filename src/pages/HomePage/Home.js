@@ -1,16 +1,16 @@
 import React from 'react'
-import{homeObjFour, homeObjOne, homeObjThree, homeObjTwo} from './Data';
+import{homeObjOne, homeObjTwo, homeObjThree, homeObjFour} from './Data';
 import {InfoSection,Pricing }from '../../components';
 
-const Home = () => {
+function Home ()  {
     return (
         <>
-        
-            <InfoSection{...homeObjOne}/>   
-            <InfoSection{...homeObjTwo}/>   
-            <InfoSection{...homeObjThree}/>  
+            
+            <InfoSection {...homeObjOne} />   
+            <InfoSection {...homeObjTwo} />   
+            <InfoSection {...homeObjThree} />  
             <Pricing /> 
-            <InfoSection{...homeObjFour}/>   
+            <InfoSection {...homeObjFour} />   
         </>
     )
 }

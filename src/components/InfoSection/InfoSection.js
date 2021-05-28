@@ -13,7 +13,7 @@ import {
     Img
 } from './InfoSection.elements';
 
-const InfoSection = ({
+function InfoSection ({
     primary,
     lightBg,
     imgStart,
@@ -27,7 +27,7 @@ const InfoSection = ({
     img,
     alt,
     start
-}) => {
+})  {
     return (
         <>
 
@@ -57,6 +57,6 @@ const InfoSection = ({
             
         </>
     ); 
-};
+}
 
 export default InfoSection
