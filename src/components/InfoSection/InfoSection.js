@@ -13,6 +13,22 @@ import {
     Img
 } from './InfoSection.elements';
 
+const fadeLeft={
+    hidden:{opacity:0, x:-100},
+    visible :{opacity:1,x:0}
+};
+
+const fadeBottom={
+    hidden:{opacity:0, y:-100},
+    visible :{opacity:1,y:0}
+};
+const fadeRight={
+    hidden:{opacity:0, x:100},
+    visible :{opacity:1,x:0}
+};
+
+
+
 function InfoSection ({
     primary,
     lightBg,
@@ -26,7 +42,7 @@ function InfoSection ({
     topLine,
     img,
     alt,
-    start
+    start,
 })  {
     return (
         <>
@@ -35,8 +51,15 @@ function InfoSection ({
             <Container>
                 <InfoRow imgStart = {imgStart}>
                     <InfoColumn>
-                        <TextWrapper>
-                                <TopLine lightTopLine={lightTopLine}>  {topLine}  </TopLine>
+                        <TextWrapper
+                        variants = {fadeRight}
+                        initial='hidden'
+                        animate='visible'
+                        transition={{duration:1}}
+                        >
+                                <TopLine lightTopLine={lightTopLine}
+                                
+                                >  {topLine}  </TopLine>
                                 <Heading lightText={lightText}>  {headline}  </Heading>
                                 <Subtitle lightTextDesc = {lightTextDesc}>  {description}  </Subtitle>
                                 <Link to='/sign-up'>
@@ -48,7 +71,14 @@ function InfoSection ({
                     </InfoColumn>
                     <InfoColumn>
                         <ImgWrapper start={start}>
-                            <Img src={img} alt={alt} />
+                            <Img
+                            
+                            src={img} alt={alt}
+                            variants = {fadeBottom}
+                            initial='hidden'
+                            animate='visible'
+                            transition={{duration:1}}
+                             />
                         </ImgWrapper>
                     </InfoColumn>
                 </InfoRow>

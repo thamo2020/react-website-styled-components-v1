@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {motion} from 'framer-motion';
 
 export const InfoSec = styled.div `
     color:white;
@@ -30,7 +31,7 @@ export const InfoColumn = styled.div `
     }
 `;
 
-export const TextWrapper = styled.div  `
+export const TextWrapper = styled(motion.div)  `
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
@@ -71,7 +72,7 @@ export const ImgWrapper = styled.div `
     justify-content: ${({start})=>(start ? 'flex-start' :'flex-end')};
 `;
 
-export const Img = styled.img `
+export const Img = styled(motion.img) `
     padding-right: 0;
     border: 0;
     max-width: 100%;
@@ -79,3 +80,4 @@ export const Img = styled.img `
     display: inline-block;
     max-height: 500px;
 `;
+
