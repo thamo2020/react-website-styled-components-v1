@@ -1,17 +1,16 @@
 export const homeObjOne  ={
-    lightBg:false,
     primary:true,
     lightBg:false,
     imgStart:'',
     lightTopLine:true,
     lightTextDesc:true,
-    buttonLabel:'Get Started',
+    buttonLabel:'FINDOUT MORE',
     description:
-    'We help business owners increase their revenue.Our team of unique specialist can help you archive your business goals.',
-    headline:'Lead Generation Specialist for Online Businesses',
+    'THE PERSONAL VAULT FOR ALL YOUR CERTIFICATES',
+    headline:'YOUR CERTIFICATES MATTER MOST',
     lightText:true,
     topLine:'Marketing Agency',
-    img:require('../../images/img1.svg').default,
+    img:require('../../images/1.svg').default,
     alt:'Image',
     start:''
 };

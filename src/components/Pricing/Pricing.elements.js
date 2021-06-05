@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+
 export const PricingSection = styled.div`
   padding: 100px 0 160px;
   display: flex;
@@ -47,7 +48,7 @@ export const PricingCard = styled(Link)`
   background: #242424;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
   width: 280px;
-  height: 500px;
+  height: 280px;
   text-decoration: none;
   border-radius: 4px;
 
@@ -79,8 +80,11 @@ export const PricingCardInfo = styled.div`
   color: #fff;
 `;
 
-export const PricingCardIcon = styled.div`
+export const PricingCardIcon = styled.i`
   margin: 24px 0;
+  
+  width:50px;
+  height: 50px;
 `;
 
 export const PricingCardPlan = styled.h3`

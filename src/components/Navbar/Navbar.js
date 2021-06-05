@@ -41,7 +41,7 @@ const Navbar = () => {
                 <NavbarContainer>
                     <NavLogo to ="/" onClick={closeMobileMenu}   > 
                         <NavIcon/>
-                            ULTRA 
+                            CERTISTORE 
                     </NavLogo>
                     <MobileIcon onClick={handleClick} >
                         {click ? <FaTimes/> : <FaBars/>}
@@ -55,13 +55,23 @@ const Navbar = () => {
                    
                         <NavItem>
                             <NavLinks to ='/services'>
-                                Services
+                                How it works
                             </NavLinks>
                         </NavItem>
                    
                         <NavItem>
                             <NavLinks to ='/products'>
-                                Products
+                                About Us
+                            </NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to ='/products'>
+                                Feedback
+                            </NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to ='/products'>
+                                Support
                             </NavLinks>
                         </NavItem>
                         <NavItemBtn>
@@ -73,6 +83,21 @@ const Navbar = () => {
                                  <NavBtnLink to ='/sign-up'>
                                      <Button fontBig primary>
                                          SIGN UP
+                                     </Button>
+                                 </NavBtnLink>
+
+                             )}
+                        </NavItemBtn>
+
+                        <NavItemBtn>
+                             {button ? (
+                                 <NavBtnLink to ='/sign-In'>
+                                     <Button primary>SIGN IN</Button>
+                                 </NavBtnLink>
+                             ) : (
+                                 <NavBtnLink to ='/sign-In'>
+                                     <Button fontBig primary>
+                                         SIGN IN
                                      </Button>
                                  </NavBtnLink>
 

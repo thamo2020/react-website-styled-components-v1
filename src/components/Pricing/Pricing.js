@@ -5,6 +5,9 @@ import { GiCrystalBars } from 'react-icons/gi';
 import { GiCutDiamond, GiRock } from 'react-icons/gi';
 import { GiFloatingCrystal } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
+import { FcUpload } from "react-icons/fc";
+import { FcDataProtection } from "react-icons/fc";
+import { FcShare } from "react-icons/fc";
 import {
   PricingSection,
   PricingWrapper,
@@ -19,63 +22,107 @@ import {
   PricingCardFeatures,
   PricingCardFeature
 } from './Pricing.elements';
-
+//import {img} from '../../images/1.svg';
 function Pricing() {
   return (
     <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
       <PricingSection>
         <PricingWrapper>
-          <PricingHeading>Our Services</PricingHeading>
+          <PricingHeading>How it works</PricingHeading>
           <PricingContainer>
             <PricingCard to='/sign-up'>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiRock />
+                <FcUpload />
                 </PricingCardIcon>
-                <PricingCardPlan>Starter Pack</PricingCardPlan>
-                <PricingCardCost>$99.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
+                <PricingCardPlan>Upload</PricingCardPlan>
+                <PricingCardCost></PricingCardCost>
+                <PricingCardLength>Snap a clear photo and Upload with Certificate Information</PricingCardLength>
                 <PricingCardFeatures>
-                  <PricingCardFeature>100 New Users</PricingCardFeature>
-                  <PricingCardFeature>$10,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Retargeting analytics</PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
+                <Button primary></Button>
               </PricingCardInfo>
             </PricingCard>
             <PricingCard to='/sign-up'>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiCrystalBars />
+                  <FcDataProtection />
                 </PricingCardIcon>
-                <PricingCardPlan>Gold Rush</PricingCardPlan>
-                <PricingCardCost>$299.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
+                <PricingCardPlan>Verify</PricingCardPlan>
+                <PricingCardCost></PricingCardCost>
+                <PricingCardLength>Verify yours a true copy by your certificate provider by a Single Click</PricingCardLength>
                 <PricingCardFeatures>
-                  <PricingCardFeature>1000 New Users</PricingCardFeature>
-                  <PricingCardFeature>$50,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Lead Gen Analytics</PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
+                <Button primary></Button>
               </PricingCardInfo>
             </PricingCard>
             <PricingCard to='/sign-up'>
               <PricingCardInfo>
                 <PricingCardIcon>
-                  <GiCutDiamond />
+                  <FcShare />
                 </PricingCardIcon>
-                <PricingCardPlan>Diamond Kings</PricingCardPlan>
-                <PricingCardCost>$999.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
+                <PricingCardPlan>Share</PricingCardPlan>
+                <PricingCardCost></PricingCardCost>
+                <PricingCardLength>Share your certificates to your dream company in smarter and convinient way</PricingCardLength>
                 <PricingCardFeatures>
-                  <PricingCardFeature>Unlimited Users</PricingCardFeature>
-                  <PricingCardFeature>Unlimited Budget</PricingCardFeature>
-                  <PricingCardFeature>24/7 Support</PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
+                <Button primary></Button>
               </PricingCardInfo>
             </PricingCard>
           </PricingContainer>
+
+          <PricingContainer>
+           
+            <PricingCard to='/sign-up'>
+              <PricingCardInfo>
+                <PricingCardIcon>
+                  <FcDataProtection />
+                </PricingCardIcon>
+                <PricingCardPlan>Verify</PricingCardPlan>
+                <PricingCardCost></PricingCardCost>
+                <PricingCardLength>Verify yours a true copy by your certificate provider by a Single Click</PricingCardLength>
+                <PricingCardFeatures>
+                  <PricingCardFeature></PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
+                </PricingCardFeatures>
+                <Button primary></Button>
+              </PricingCardInfo>
+            </PricingCard>
+          
+          </PricingContainer>
+
+          <PricingContainer>
+            
+          <PricingCard to='/sign-up'>
+              <PricingCardInfo>
+                <PricingCardIcon>
+                  <FcShare />
+                </PricingCardIcon>
+                <PricingCardPlan>Share</PricingCardPlan>
+                <PricingCardCost></PricingCardCost>
+                <PricingCardLength>Share your certificates to your dream company in smarter and convinient way</PricingCardLength>
+                <PricingCardFeatures>
+                  <PricingCardFeature></PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
+                  <PricingCardFeature></PricingCardFeature>
+                </PricingCardFeatures>
+                <Button primary></Button>
+              </PricingCardInfo>
+            </PricingCard>
+            
+          </PricingContainer>
+
+
         </PricingWrapper>
       </PricingSection>
     </IconContext.Provider>
